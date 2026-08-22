@@ -1,0 +1,186 @@
+/* ==========================================================================
+   Aastha Jha — Personal Portfolio
+   Responsive Stylesheet
+   ========================================================================== */
+
+/* --- Large Tablets & Laptops (Max 1024px) --- */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-highlights {
+    justify-content: center;
+  }
+
+  .profile-frame {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .skills-lab-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Mobile Devices (Max 768px) --- */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
+  /* Mobile Navbar */
+  .mobile-toggle {
+    display: block;
+    z-index: 1001;
+  }
+
+  .mobile-toggle.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .mobile-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-toggle.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 82%;
+    max-width: 320px;
+    height: 100vh;
+    background: #ffffff;
+    border-left: 1px solid var(--border-soft);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: calc(var(--header-height) + 2rem) 2rem 2rem 2rem;
+    gap: 1.5rem;
+    transition: right 0.35s ease;
+    box-shadow: -10px 0 30px rgba(194, 59, 109, 0.1);
+    z-index: 1000;
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+
+  /* Academic Table on Mobile */
+  .academic-table th, 
+  .academic-table td {
+    padding: 0.9rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .course-title {
+    font-size: 0.925rem;
+  }
+
+  /* Hero Mobile */
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .objective-card {
+    padding: 1.75rem;
+  }
+
+  .objective-quote {
+    font-size: 1.05rem;
+    padding-left: 1.25rem;
+  }
+
+  .contact-info-card,
+  .contact-form-card {
+    padding: 1.75rem;
+  }
+
+  .email-copy-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .back-to-top {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .toast-container {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+/* --- Extra Small Screens (Max 480px) --- */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-highlights {
+    gap: 1rem;
+  }
+
+  .highlight-val {
+    font-size: 1.25rem;
+  }
+
+  .cert-card {
+    flex-direction: column;
+  }
+}
