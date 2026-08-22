@@ -1,0 +1,297 @@
+/* ==========================================================================
+   Aastha Jha — Personal Portfolio
+   Soft, Aesthetic, Warm Blush & Rose Design System
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+/* --- CSS Variables / Soft Feminine & Aesthetic Palette --- */
+:root {
+  /* Warm Soft Blush, Rose & Cream Tones */
+  --bg-main: #fdf8fa;
+  --bg-card: #ffffff;
+  --bg-card-soft: #fff1f5;
+  --bg-card-subtle: #fcf2f6;
+  --bg-lavender: #f7f3fb;
+  --bg-peach: #fff7f2;
+  
+  /* Accent Colors (Soft Rose, Peony Pink, Lilac & Warm Coral) */
+  --accent-pink: #e05688;
+  --accent-pink-dark: #c23b6d;
+  --accent-pink-light: #fbcfe8;
+  --accent-pink-subtle: #fdf2f7;
+  --accent-rose: #f43f5e;
+  --accent-lavender: #9d65c9;
+  --accent-lavender-light: #f3e8ff;
+  --accent-peach: #f97316;
+  
+  /* Text Colors (Warm Plum Slate) */
+  --text-dark: #23192d;
+  --text-body: #4c3e56;
+  --text-muted: #7d6e87;
+  --text-soft: #a192ab;
+  --text-pink: #c23b6d;
+  
+  /* Borders & Shadows */
+  --border-light: #f3dbe5;
+  --border-soft: #fad2e1;
+  --border-active: #f472b6;
+  
+  --shadow-sm: 0 2px 8px rgba(194, 59, 109, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+  --shadow-card: 0 8px 24px rgba(194, 59, 109, 0.06), 0 2px 6px rgba(0, 0, 0, 0.03);
+  --shadow-hover: 0 14px 32px rgba(194, 59, 109, 0.12), 0 4px 10px rgba(0, 0, 0, 0.04);
+  
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'DM Sans', 'Plus Jakarta Sans', sans-serif;
+  
+  /* Sizing & Transitions */
+  --container-max: 1140px;
+  --header-height: 74px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 26px;
+  --radius-full: 9999px;
+  
+  --transition-fast: 0.2s ease;
+  --transition-smooth: 0.3s ease;
+}
+
+/* --- Global Reset & Normal Scrollbar --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-body);
+  line-height: 1.7;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Normal Soft Selection */
+::selection {
+  background: #fbcfe8;
+  color: #831843;
+}
+
+/* Clean, standard soft scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #fdf5f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #f0c3d4;
+  border-radius: 5px;
+  border: 2px solid #fdf5f8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-pink);
+}
+
+/* --- Soft Background Atmosphere --- */
+.soft-bg-decor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.decor-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.decor-blob-1 {
+  top: -8%;
+  right: -5%;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, #fbcfe8 0%, rgba(251, 207, 232, 0) 70%);
+}
+
+.decor-blob-2 {
+  top: 45%;
+  left: -8%;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, #ede9fe 0%, rgba(237, 233, 254, 0) 70%);
+}
+
+.decor-blob-3 {
+  bottom: 5%;
+  right: 10%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, #ffe4e6 0%, rgba(255, 228, 230, 0) 70%);
+}
+
+/* --- Layout Containers --- */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  position: relative;
+  padding: 5.5rem 0;
+  z-index: 1;
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-dark);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+p {
+  color: var(--text-body);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+/* Soft Highlight Text */
+.highlight-text {
+  color: var(--accent-pink-dark);
+  font-style: italic;
+}
+
+/* --- Section Headers --- */
+.section-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 1rem;
+  background: var(--bg-card-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-full);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-pink-dark);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.9rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  margin-bottom: 0.85rem;
+  color: var(--text-dark);
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* --- Scroll Progress Bar --- */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3.5px;
+  background: linear-gradient(90deg, #f472b6, #e05688, #9d65c9);
+  z-index: 1000;
+  transition: width 0.1s linear;
+}
+
+/* --- Scroll Reveal Animations --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+/* Toast Notifications */
+.toast-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9990;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  pointer-events: none;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1.35rem;
+  background: #ffffff;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 10px 30px rgba(194, 59, 109, 0.12);
+  pointer-events: auto;
+  transform: translateY(15px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.toast svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--accent-pink-dark);
+  flex-shrink: 0;
+}

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aastha Jha — Building Ideas Into Reality. B.Tech Computer Science Engineering student at I.K. Gujral Punjab Technical University. Portfolio showcasing academic background, technical skills, projects, and creative activities.">
+  <meta name="keywords" content="Aastha Jha, Portfolio, Computer Science Engineering, BTech, C, C++, Python, HTML, CSS, Begusarai, Bihar, IKGPTU">
+  <meta name="author" content="Aastha Jha">
+  <title>Aastha Jha — Building Ideas Into Reality</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Soft Background Decorative Blobs -->
+  <div class="soft-bg-decor" aria-hidden="true">
+    <div class="decor-blob decor-blob-1"></div>
+    <div class="decor-blob decor-blob-2"></div>
+    <div class="decor-blob decor-blob-3"></div>
+  </div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Aastha Jha Home">
+        <span>Aastha Jha</span>
+        <span class="brand-dot"></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">Objective</a></li>
+          <li><a href="#academics" class="nav-link">Academics</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#beyond" class="nav-link">Beyond Code</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Audio Synthesizer Toggle Button -->
+        <button class="audio-toggle-btn" id="audio-toggle" title="Toggle Soft Melodic FX" aria-label="Toggle Sound Effects">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+
+        <!-- LinkedIn Direct Link in Navbar -->
+        <a href="https://www.linkedin.com/in/aastha-jha-92a1b242b" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin" style="padding: 0.45rem 1rem; font-size: 0.825rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          <span>LinkedIn</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (WITH PROFILE PICTURE & LINKEDIN)
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Content -->
+          <div class="hero-content">
+            <div class="hero-status-pill reveal">
+              <span class="status-dot"></span>
+              <span>B.Tech CSE &bull; I.K. Gujral Punjab Technical University (2025–Present)</span>
+            </div>
+
+            <div class="hero-greeting reveal reveal-delay-1">
+              Hello, I am
+            </div>
+
+            <h1 class="hero-title reveal reveal-delay-2">
+              Aastha Jha
+            </h1>
+
+            <div class="hero-subtitle reveal reveal-delay-2">
+              Building Ideas <span class="highlight-text">Into Reality.</span>
+            </div>
+
+            <p class="hero-description reveal reveal-delay-3">
+              Computer Science Engineering student from Begusarai, Bihar. Passionate about software development, procedural &amp; object-oriented programming (C, C++, Python), web design, and developing efficient solutions while aspiring towards entrepreneurship.
+            </p>
+
+            <div class="hero-actions reveal reveal-delay-3">
+              <a href="#academics" class="btn btn-primary">
+                <span>View Academic Record</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+
+              <a href="https://www.linkedin.com/in/aastha-jha-92a1b242b" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>Connect on LinkedIn</span>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <div class="hero-highlights reveal reveal-delay-3">
+              <div class="highlight-item">
+                <span class="highlight-val">B.Tech CSE</span>
+                <span class="highlight-lbl">IKGPTU Kapurthala</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-val">2+ Certifications</span>
+                <span class="highlight-lbl">Python &amp; MS Office</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-val">3 Languages</span>
+                <span class="highlight-lbl">English, Hindi, Maithili</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Profile Picture Frame -->
+          <div class="hero-image-wrapper reveal reveal-delay-2">
+            <div class="profile-frame">
+              <img src="images/aastha.jpg" alt="Aastha Jha Portrait" class="profile-img" loading="eager">
+              <div class="profile-badge-floating">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                <span>B.Tech CSE Student 🌸</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: CAREER OBJECTIVE
+         ========================================================================== -->
+    <section class="objective-section" id="about" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="objective-card reveal">
+          <div class="section-tag" style="margin-bottom: 1.25rem;">
+            <span>Career Objective</span>
+          </div>
+
+          <blockquote class="objective-quote">
+            “To secure a challenging position in the engineering field where I can apply my technical skills, analytical thinking, and innovative ideas to develop efficient solutions while gaining practical industry experience. I aim to continuously enhance my knowledge and skills and utilize them to achieve my long-term goal of becoming a successful entrepreneur and business owner.”
+          </blockquote>
+
+          <div class="objective-meta">
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span><strong>Location:</strong> Begusarai, Bihar</span>
+            </div>
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span><strong>Email:</strong> aasthajha406@gmail.com</span>
+            </div>
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <a href="https://www.linkedin.com/in/aastha-jha-92a1b242b" target="_blank" rel="noopener noreferrer" style="color: var(--accent-pink-dark); font-weight: 600; text-decoration: underline;">linkedin.com/in/aastha-jha-92a1b242b</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: ACADEMIC DETAILS (STRUCTURED TABLE FORMAT)
+         ========================================================================== -->
+    <section class="academics-section" id="academics">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span>Academic Background</span>
+          </div>
+          <h2 class="section-title">Education &amp; Qualifications</h2>
+          <p class="section-subtitle">
+            A comprehensive record of my university degree and schooling credentials.
+          </p>
+        </div>
+
+        <div class="academic-table-card reveal">
+          <div class="table-responsive-wrapper">
+            <table class="academic-table">
+              <thead>
+                <tr>
+                  <th>Degree / Qualification</th>
+                  <th>Institution / Board</th>
+                  <th>Duration / Year</th>
+                  <th>Subjects &amp; Highlights</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Row 1: BTech CSE -->
+                <tr>
+                  <td>
+                    <div class="course-title">Bachelor of Technology (BTech)</div>
+                    <div class="course-sub">Computer Science Engineering</div>
+                  </td>
+                  <td>
+                    <div class="inst-name">I.K. Gujral Punjab Technical University</div>
+                    <div class="inst-loc">Kapurthala, Punjab</div>
+                  </td>
+                  <td>
+                    <span class="badge-year badge-current">2025 – Present</span>
+                  </td>
+                  <td>
+                    <div class="subject-pills">
+                      <span class="sub-pill">Computer Science Engineering</span>
+                      <span class="sub-pill">C Programming</span>
+                      <span class="sub-pill">C++</span>
+                      <span class="sub-pill">Python (Basics)</span>
+                      <span class="sub-pill">Web Development (HTML/CSS)</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- Row 2: Class 12th CBSE -->
+                <tr>
+                  <td>
+                    <div class="course-title">Senior Secondary (Class 12th)</div>
+                    <div class="course-sub">Central Board of Secondary Education (CBSE)</div>
+                  </td>
+                  <td>
+                    <div class="inst-name">Ganga Global School</div>
+                    <div class="inst-loc">Begusarai, Bihar</div>
+                  </td>
+                  <td>
+                    <span class="badge-year">Passing Year: 2025</span>
+                  </td>
+                  <td>
+                    <div class="subject-pills">
+                      <span class="sub-pill">Physics</span>
+                      <span class="sub-pill">Chemistry</span>
+                      <span class="sub-pill">Mathematics</span>
+                      <span class="sub-pill">English</span>
+                      <span class="sub-pill">Physical Education</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- Row 3: Class 10th CBSE -->
+                <tr>
+                  <td>
+                    <div class="course-title">Secondary Education (Class 10th)</div>
+                    <div class="course-sub">Central Board of Secondary Education (CBSE)</div>
+                  </td>
+                  <td>
+                    <div class="inst-name">Ganga Global School</div>
+                    <div class="inst-loc">Begusarai, Bihar</div>
+                  </td>
+                  <td>
+                    <span class="badge-year">Passing Year: 2023</span>
+                  </td>
+                  <td>
+                    <div class="subject-pills">
+                      <span class="sub-pill">Mathematics</span>
+                      <span class="sub-pill">Science</span>
+                      <span class="sub-pill">Social Science</span>
+                      <span class="sub-pill">English</span>
+                      <span class="sub-pill">Hindi</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: PROJECTS & EXPERIENCES
+         ========================================================================== -->
+    <section class="projects-section" id="projects" style="background: #fcf4f7;">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span>Practical Experience</span>
+          </div>
+          <h2 class="section-title">Projects &amp; Work</h2>
+          <p class="section-subtitle">
+            Academic projects, data reporting systems, and web development.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: MS Office Based Report Projects -->
+          <div class="project-card reveal">
+            <div class="project-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+            </div>
+            <div class="project-category">Report &amp; Data Engineering</div>
+            <h3 class="project-title">MS Office Academic Report &amp; Data Projects</h3>
+            <p class="project-desc">
+              Created formatted documents and data tables for academic assignments using MS Word and Excel with professional layouts, organized formulas, and clean typographical presentation standards.
+            </p>
+
+            <div class="project-techs">
+              <span class="tech-tag">MS Word</span>
+              <span class="tech-tag">MS Excel</span>
+              <span class="tech-tag">Data Tables</span>
+              <span class="tech-tag">MS Office</span>
+              <span class="tech-tag">PowerPoint</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid var(--border-light);">
+              <span style="font-size: 0.825rem; color: var(--text-muted); font-weight: 500;">Academic Coursework</span>
+              <a href="#contact" class="btn btn-secondary" style="padding: 0.35rem 0.9rem; font-size: 0.825rem;">Inquire</a>
+            </div>
+          </div>
+
+          <!-- Project 2: Web Development & Layouts -->
+          <div class="project-card reveal reveal-delay-1">
+            <div class="project-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </div>
+            <div class="project-category">Web Development &amp; Design</div>
+            <h3 class="project-title">Web Development &amp; Portfolio Design</h3>
+            <p class="project-desc">
+              Crafted clean, accessible, and responsive web pages utilizing semantic HTML, modern CSS styling, flexbox/grid architectures, and Canva visual graphics.
+            </p>
+
+            <div class="project-techs">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">Canva</span>
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">Windows OS</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid var(--border-light);">
+              <span style="font-size: 0.825rem; color: var(--text-muted); font-weight: 500;">Web &amp; UI Practice</span>
+              <a href="#contact" class="btn btn-secondary" style="padding: 0.35rem 0.9rem; font-size: 0.825rem;">Inquire</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: SKILLS LAB & TECH ECOSYSTEM
+         ========================================================================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span>Skills &amp; Capabilities</span>
+          </div>
+          <h2 class="section-title">Skills Lab &amp; Strengths</h2>
+          <p class="section-subtitle">
+            Programming languages, web tools, office productivity, and professional strengths from my resume.
+          </p>
+        </div>
+
+        <div class="skills-lab-container">
+          
+          <!-- Interactive Skill Cloud -->
+          <div class="skills-arena-card reveal">
+            <div class="skill-category-tabs">
+              <button class="skill-tab-btn active" data-category="all">All Skills</button>
+              <button class="skill-tab-btn" data-category="languages">Languages</button>
+              <button class="skill-tab-btn" data-category="web">Web &amp; Office</button>
+              <button class="skill-tab-btn" data-category="tools">Tools &amp; OS</button>
+              <button class="skill-tab-btn" data-category="strengths">Strengths</button>
+            </div>
+
+            <div class="skills-nodes-cloud" id="skills-cloud">
+              <!-- Rendered dynamically by skills-lab.js -->
+            </div>
+            
+            <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 1rem;">
+              🌸 Click any skill node to view detailed context in the Inspector card.
+            </p>
+          </div>
+
+          <!-- Dynamic Skill Matrix Inspector -->
+          <div class="skills-inspector-card reveal reveal-delay-1" id="skills-inspector">
+            <div>
+              <div class="inspector-header">
+                <div class="inspector-icon-box" id="inspector-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+                </div>
+                <div class="inspector-title-area">
+                  <h3 id="inspector-title">C Programming</h3>
+                  <p id="inspector-category">LANGUAGES</p>
+                </div>
+              </div>
+
+              <div class="inspector-body">
+                <div class="inspector-stat-row">
+                  <span class="inspector-label">Domain</span>
+                  <span class="inspector-value" id="inspector-domain">Academic &amp; Practical</span>
+                </div>
+                <div class="inspector-stat-row">
+                  <span class="inspector-label">Level</span>
+                  <span class="proficiency-pill" id="inspector-level">Core Skill</span>
+                </div>
+                <div>
+                  <span class="inspector-label" style="display: block; margin-bottom: 0.35rem;">Skill Summary</span>
+                  <p class="inspector-summary" id="inspector-summary">
+                    Procedural programming foundation, pointers, memory allocation, data structures, logic formulation, and algorithm implementation.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inspector-projects" id="inspector-projects">
+              Applied in: Academic Engineering Projects &amp; Problem Solving
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: CERTIFICATIONS & AWARDS
+         ========================================================================== -->
+    <section class="certifications-section" id="certifications" style="background: #fdf5f8;">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span>Verified Credentials</span>
+          </div>
+          <h2 class="section-title">Certifications &amp; Awards</h2>
+          <p class="section-subtitle">
+            Formal technical certifications validating software and programming fundamentals.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          
+          <!-- Cert 1: MS Office Essentials -->
+          <div class="cert-card reveal">
+            <div class="cert-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--accent-pink-dark); font-weight: 700; text-transform: uppercase; margin-bottom: 0.2rem;">Certified</div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.4rem; color: var(--text-dark);">MS Office Essentials</h3>
+              <p style="font-size: 0.9rem; color: var(--text-body); line-height: 1.6;">
+                Proficiency in document formatting and layout design in MS Word, data table engineering and analysis in MS Excel, and dynamic presentations in PowerPoint.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cert 2: Intro to Python Programming -->
+          <div class="cert-card reveal reveal-delay-1">
+            <div class="cert-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--accent-pink-dark); font-weight: 700; text-transform: uppercase; margin-bottom: 0.2rem;">Certified</div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.4rem; color: var(--text-dark);">Introduction to Python Programming</h3>
+              <p style="font-size: 0.9rem; color: var(--text-body); line-height: 1.6;">
+                Certified in fundamental Python programming syntax, scripting, data handling, control structures, and basic computational problem solving.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: BEYOND CODE (EXTRA-CURRICULAR ACTIVITIES & LANGUAGES)
+         ========================================================================== -->
+    <section class="beyond-section" id="beyond">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span>Extra-Curricular Interests</span>
+          </div>
+          <h2 class="section-title">Beyond Code</h2>
+          <p class="section-subtitle">
+            Anchoring, creative speaking, photo/video editing, singing, and languages.
+          </p>
+        </div>
+
+        <div class="beyond-grid">
+
+          <!-- Activity 1: Anchoring & Creative Speaking -->
+          <div class="beyond-card reveal">
+            <div class="beyond-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+            </div>
+            <h3 class="beyond-title">Anchoring &amp; Speaking</h3>
+            <p class="beyond-desc">
+              Strong interest and active participation in event anchoring, creative public speaking, and engaging audience coordination.
+            </p>
+
+            <div style="background: #fdf8fa; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 0.85rem; font-size: 0.8rem; color: var(--text-muted);">
+              <span style="font-weight: 600; color: var(--accent-pink-dark);">Strengths:</span> Good Communication, Presentation &amp; Stage Presence
+            </div>
+          </div>
+
+          <!-- Activity 2: Video & Photo Editing -->
+          <div class="beyond-card reveal reveal-delay-1">
+            <div class="beyond-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+            </div>
+            <h3 class="beyond-title">Video &amp; Photo Editing</h3>
+            <p class="beyond-desc">
+              Passionate about creative media editing, color adjustments, video transitions, and Canva visual graphics.
+            </p>
+
+            <div class="media-showcase-widget">
+              <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted);">
+                <span>Timeline Scrubber</span>
+                <span id="media-timestamp">00:35 / 01:00</span>
+              </div>
+              <div class="media-timeline-bar" id="media-scrubber" title="Click to scrub timeline">
+                <div class="media-timeline-fill" id="media-scrubber-fill" style="width: 58%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Activity 3: Singing & Cultural Activities -->
+          <div class="beyond-card reveal reveal-delay-2">
+            <div class="beyond-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+            </div>
+            <h3 class="beyond-title">Singing &amp; Cultural Events</h3>
+            <p class="beyond-desc">
+              Enjoy singing and taking active part in cultural and musical events, bringing creativity and harmony together.
+            </p>
+
+            <div class="audio-player-widget">
+              <div class="player-header">
+                <div class="track-info">
+                  <h5 id="current-track-title">Singing Harmonies</h5>
+                  <p>Soft Melodic Tone</p>
+                </div>
+                <button class="play-pause-btn" id="play-ambient-btn" aria-label="Play or Pause Melody">
+                  <svg viewBox="0 0 24 24" width="12" height="12"><polygon points="5 3 19 12 5 21 5 3" fill="currentColor"/></svg>
+                </button>
+              </div>
+
+              <div class="visualizer-bars" id="visualizer-bars">
+                <div class="v-bar"></div>
+                <div class="v-bar"></div>
+                <div class="v-bar"></div>
+                <div class="v-bar"></div>
+                <div class="v-bar"></div>
+                <div class="v-bar"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Activity 4: Languages Known -->
+          <div class="beyond-card reveal reveal-delay-3">
+            <div class="beyond-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 class="beyond-title">Languages Known</h3>
+            <p class="beyond-desc">
+              Fluent communication across three languages:
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; background: #fdf8fa; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 0.85rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: 600; font-size: 0.85rem;">English</span>
+                <span class="proficiency-pill">Fluent</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: 600; font-size: 0.85rem;">Hindi</span>
+                <span class="proficiency-pill">Native</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: 600; font-size: 0.85rem;">Maithili</span>
+                <span class="proficiency-pill">Native</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: CONTACT & CONNECT
+         ========================================================================== -->
+    <section class="contact-section" id="contact" style="background: #fcf2f6;">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span>Get in Touch</span>
+          </div>
+          <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+          <p class="section-subtitle">
+            Open for engineering internships, collaborative projects, technical discussions, and speaking opportunities.
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          
+          <!-- Contact Info & Direct Links -->
+          <div class="contact-info-card reveal">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--text-dark);">Aastha Jha</h3>
+            <p style="color: var(--text-body); line-height: 1.65; margin-bottom: 1.5rem;">
+              B.Tech Computer Science Engineering student eager to apply technical skills, analytical thinking, and creativity to real-world opportunities.
+            </p>
+
+            <!-- 1-Click Copy Email Box -->
+            <div class="email-copy-box" id="copy-email-btn" title="Click to copy email address">
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.15rem;">Direct Email</div>
+                <span class="email-address">aasthajha406@gmail.com</span>
+              </div>
+              <span class="copy-indicator">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                Copy
+              </span>
+            </div>
+
+            <!-- LinkedIn Card Link -->
+            <a href="https://www.linkedin.com/in/aastha-jha-92a1b242b" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: space-between; background: #e8f3fc; border: 1px solid #b9daf7; padding: 0.9rem 1.25rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; color: #0a66c2; text-decoration: none; transition: transform 0.2s ease;">
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <div>
+                  <div style="font-size: 0.75rem; color: #084e96; text-transform: uppercase;">Professional Profile</div>
+                  <strong style="font-size: 0.95rem;">LinkedIn / Aastha Jha</strong>
+                </div>
+              </div>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+
+            <!-- Location & Time -->
+            <div style="background: #ffffff; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 0.9rem 1.1rem; margin-bottom: 1.5rem; font-size: 0.85rem;">
+              <div style="color: var(--text-dark); font-weight: 600; margin-bottom: 0.2rem;">Begusarai, Bihar, India</div>
+              <div style="color: var(--text-muted);">Local Time: <span id="live-clock" style="font-weight: 600; color: var(--accent-pink-dark);">--:--:--</span></div>
+            </div>
+
+            <!-- Social Links Row -->
+            <div class="social-links-row">
+              <a href="https://www.linkedin.com/in/aastha-jha-92a1b242b" target="_blank" rel="noopener noreferrer" class="social-btn linkedin-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="mailto:aasthajha406@gmail.com" class="social-btn" aria-label="Send Direct Email" title="Send Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+              <a href="tel:620013XXXX" class="social-btn" aria-label="Phone" title="Phone: 620013XXXX">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Interactive Message Composer -->
+          <div class="contact-form-card reveal reveal-delay-1">
+            <div style="margin-bottom: 1.25rem;">
+              <h4 style="font-size: 1.2rem; margin-bottom: 0.35rem; color: var(--text-dark);">Send a Direct Message</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Select a quick topic or write a custom message:</p>
+            </div>
+
+            <!-- Quick Prompt Pills -->
+            <div class="quick-prompts">
+              <button type="button" class="prompt-chip" data-text="Hi Aastha, I would like to discuss an engineering opportunity or internship with you.">💼 Engineering Role / Internship</button>
+              <button type="button" class="prompt-chip" data-text="Hi Aastha, let's collaborate on a software or web project!">💡 Project Collaboration</button>
+              <button type="button" class="prompt-chip" data-text="Hi Aastha, would love to connect for an anchoring or speaking event.">🎤 Speaking / Anchoring</button>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Priya Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="priya@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message 🌸</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <div class="form-success-alert" id="form-success-alert" role="alert"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          Aastha Jha <span style="color: var(--accent-pink-dark); font-size: 0.95rem; font-family: var(--font-sans); font-weight: 500;">— Building Ideas Into Reality</span>
+        </div>
+        <div class="footer-copy">
+          B.Tech Computer Science Engineering &bull; I.K. Gujral Punjab Technical University &bull; Begusarai, Bihar
+        </div>
+      </div>
+
+      <div style="font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 1rem;">
+        <a href="https://www.linkedin.com/in/aastha-jha-92a1b242b" target="_blank" rel="noopener noreferrer" style="color: #0a66c2; font-weight: 600;">LinkedIn</a>
+        <span>&bull;</span>
+        <span>&copy; 2026 Aastha Jha</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back To Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/audio-fx.js"></script>
+  <script src="js/skills-lab.js"></script>
+  <script src="js/interactive-game.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
