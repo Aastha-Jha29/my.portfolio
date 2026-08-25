@@ -14,7 +14,7 @@ A soft, aesthetic personal portfolio website for **Aastha Jha**, designed with w
 - **Phone**: `620013XXXX`
 - **LinkedIn**: [linkedin.com/in/aastha-jha-92a1b242b](https://www.linkedin.com/in/aastha-jha-92a1b242b)
 
----
+---      
 
 ## 📚 Academic Qualifications (Table Format)
 
