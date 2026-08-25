@@ -2,7 +2,7 @@
 
 A soft, aesthetic personal portfolio website for **Aastha Jha**, designed with warm blush & rose pastel tones, clean typography, normal standard scrollbar, structured academic table, and zero AI-generated clutter.
 
----
+---       
 
 ## 👩‍💼 Profile & Background (From Resume)
 
